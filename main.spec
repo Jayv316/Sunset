@@ -19,7 +19,6 @@ a = Analysis(
     cipher=block_cipher,
     noarchive=False,
 )
-a.datas += [('Toolbox.py','Toolbox.py', "DATA")]
 a.datas += Tree('./data', prefix='data')
 pyz = PYZ(a.pure, a.zipped_data, cipher=block_cipher)
 
